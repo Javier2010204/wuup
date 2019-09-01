@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Wuup</title>
-    <%= csrf_meta_tags %>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <head>
+        <title>Wuup</title>
+        <%= csrf_meta_tags %>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
 
-  <body>
-    <%= yield %>
-  </body>
+    <body>
+        <%= render 'partials/nav'%>
+        <%= yield %>
+    </body>
 </html>
